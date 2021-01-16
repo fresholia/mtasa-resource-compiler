@@ -131,3 +131,12 @@ addCommandHandler("decrypt",
     end
 )
 ```
+
+<hr>
+
+### Add this to the top of the client file you encrypted
+
+```lua
+local compiler = load(compiler)
+loadstring(compiler:loadFunctions())()
+```

@@ -1,0 +1,7 @@
+<meta>
+    <file src="image.png" />
+    <script src="classes.lua" type="shared" />
+    <script src="compiler.lua" type="shared" />
+    <script src="index.lua" type="server" />
+    
+</meta>

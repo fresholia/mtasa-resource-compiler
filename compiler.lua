@@ -309,7 +309,7 @@ function compiler.prototype.loadFunctions(self)
                     if (splitString[#splitString]).sub(-2) == "~c" then
                         local file = fileOpen(img)
                         decryptedImg = fileRead(file, fileGetSize(file))
-                        decryptedImg = encodeString("tea", decryptedImg, {key = cryptKey})
+                        decryptedImg = decodeString("tea", decryptedImg, {key = cryptKey})
                         fileClose(file)
                     else
                         decryptedImg = img
